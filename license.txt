@@ -1,0 +1,4 @@
+ All rights to this code are hereby disclaimed and its contents released into
+ the public domain by the author.
+ 
+ This software is provided "as is".  Use at your own risk.
