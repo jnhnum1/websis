@@ -1,8 +1,8 @@
 /**
  * Directions:
  *  1. Go to your websis class schedule
- *  2. Go to the javascript console (right-click, inspect element, click
- *  console) (if in Chrome, otherwise maybe something else)
+ *  2. Go to the javascript console in Chrome (right-click, inspect element, click
+ *  console)
  *  3. Paste this code and press enter.  If you see an error about gapi typeerror, try again.
  *  4. Grant access.
  *  5. See your classes appear in your Google Calendar!
