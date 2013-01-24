@@ -56,8 +56,6 @@
                       } else {
                           type = "";
                       }
-                      
-
                   }
                   if (type !== null){
                       var times = parseTimeString(timeText);
@@ -179,14 +177,14 @@
               var days2String = dayList.join(",");
 
               var times = x.match(/(\d+)(\.(\d+))?(-(\d+)(\.(\d+))?)?/);
-              var patt = /PM/g;
+              var patt = /PM/;
               var startHour = times[1];
               var endHour = times[5] || ("" + (parseInt(startHour) + 1));
               
               if(patt.test(x) || parseInt(startHour) < 9){
                   startHour = "" + (parseInt(startHour)+12);
               }
-              if(patt.test(x) || parseInt(endHour)<9){
+              if(patt.test(x) || parseInt(endHour) < 9){
                   endHour = "" + (parseInt(endHour) + 12);
 
               }         
