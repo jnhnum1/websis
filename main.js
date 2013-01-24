@@ -12,7 +12,7 @@
  * 
  */
 
-function() {
+(function() {
   var clientId = '1032807918132.apps.googleusercontent.com';
   var scope = 'https://www.googleapis.com/auth/calendar';
   var apiKey = 'AIzaSyA3E0X5W_Q2spjPrehYTQI49w-xYGLjzDY';
@@ -220,4 +220,4 @@ function() {
   jqScript.onload = withJquery;
 
   head.appendChild(jqScript);
-}();
+})();
