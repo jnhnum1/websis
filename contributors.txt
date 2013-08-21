@@ -1,2 +1,3 @@
  Originally written by Justin Holmgren (holmgren at mit dot edu)
  Updated for Spring 2013 and to include evening classes by Tami Forrester (tforrest at mit dot edu)
+ Updated for Fall 2013 by Dion Larson (dionl at mit dot edu)
