@@ -17,6 +17,17 @@
   var scope = 'https://www.googleapis.com/auth/calendar';
   var apiKey = 'AIzaSyA3E0X5W_Q2spjPrehYTQI49w-xYGLjzDY';
 
+  var dates = {
+    MO: "2013-09-09T",
+    TU: "2013-09-10T",
+    WE: "2013-09-04T",
+    TH: "2013-09-05T",
+    FR: "2013-09-06T",
+    SA: "2013-09-07T",
+    SU: "2013-09-08T",
+    LASTDAY: "20131212",
+  };
+
   var withGApi = function(data, textStatus, jqxhr) {
       console.log("gapi loaded");
       setTimeout(function() {
@@ -62,29 +73,13 @@
                       if (times) {
                           var recurList = [];
                           for(var i = 0; i < times.length; i++) {
-                              recurList.push("RRULE:FREQ=WEEKLY;UNTIL=20130516;BYHOUR=" + times[i].startHour + ";BYMINUTE=" + times[i].startMinute+";BYDAY=" + times[i].days2String);
+                              recurList.push("RRULE:FREQ=WEEKLY;UNTIL="+dates.LASTDAY+";BYHOUR=" + times[i].startHour + ";BYMINUTE=" + times[i].startMinute+";BYDAY=" + times[i].days2String);
                           }
                           var firstEvent = findFirstEvent(times);
                           var startDateTime = firstEvent.startHour + ":" + firstEvent.startMinute + ":00";
                           var endDateTime = firstEvent.endHour + ":" + firstEvent.endMinute + ":00";
                           var firstDay = firstEvent.day;
-                          var firstDate;
-                          if (firstDay == "MO") {
-                              firstDate = "2013-02-11T";
-                          } else if (firstDay == "TU") {
-                              firstDate = "2013-02-05T";
-                          } else if (firstDay == "WE") {
-                              firstDate = "2013-02-06T";
-                          } else if (firstDay == "TH") {
-                              firstDate = "2013-02-07T";
-                          } else if (firstDay == "FR") {
-                              firstDate = "2013-02-08T";
-                          } else if (firstDay == "SA") {
-                              firstDate = "2013-02-09T";
-                          } else if (firstDay == "SU") {
-                              firstDate = "2013-02-10T";
-                          }
-
+                          var firstDate = dates[firstDay];
                           var request = gapi.client.calendar.events.insert(
                               {"calendarId": "primary",
                                   resource: {
