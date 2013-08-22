@@ -25,7 +25,7 @@
     FRI: "2013-09-06T",
     SAT: "2013-09-07T",
     SUN: "2013-09-08T",
-    LASTDAY: "20131211",
+    LASTDAY: "20131212",
   };
 
   var withGApi = function(data, textStatus, jqxhr) {
