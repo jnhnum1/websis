@@ -91,7 +91,7 @@
                           } else if (firstDay == "FR") {
                               firstDate = dates.FRI;
                           } else if (firstDay == "SA") {
-                              firstDate = dates.DAT;
+                              firstDate = dates.SAT;
                           } else if (firstDay == "SU") {
                               firstDate = dates.SUN;
                           }
