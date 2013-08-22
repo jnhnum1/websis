@@ -18,14 +18,14 @@
   var apiKey = 'AIzaSyA3E0X5W_Q2spjPrehYTQI49w-xYGLjzDY';
 
   var dates = {
-    MON: "2013-09-09T",
-    TUES: "2013-09-10T",
-    WED: "2013-09-04T",
-    THURS: "2013-09-05T",
-    FRI: "2013-09-06T",
-    SAT: "2013-09-07T",
-    SUN: "2013-09-08T",
-    LASTDAY: "20131211",
+    MO: "2013-09-09T",
+    TU: "2013-09-10T",
+    WE: "2013-09-04T",
+    TH: "2013-09-05T",
+    FR: "2013-09-06T",
+    SA: "2013-09-07T",
+    SU: "2013-09-08T",
+    LASTDAY: "20131212",
   };
 
   var withGApi = function(data, textStatus, jqxhr) {
@@ -79,23 +79,7 @@
                           var startDateTime = firstEvent.startHour + ":" + firstEvent.startMinute + ":00";
                           var endDateTime = firstEvent.endHour + ":" + firstEvent.endMinute + ":00";
                           var firstDay = firstEvent.day;
-                          var firstDate;
-                          if (firstDay == "MO") {
-                              firstDate = dates.MON;
-                          } else if (firstDay == "TU") {
-                              firstDate = dates.TUES;
-                          } else if (firstDay == "WE") {
-                              firstDate = dates.WED;
-                          } else if (firstDay == "TH") {
-                              firstDate = dates.THURS;
-                          } else if (firstDay == "FR") {
-                              firstDate = dates.FRI;
-                          } else if (firstDay == "SA") {
-                              firstDate = dates.DAT;
-                          } else if (firstDay == "SU") {
-                              firstDate = dates.SUN;
-                          }
-
+                          var firstDate = dates[firstDay];
                           var request = gapi.client.calendar.events.insert(
                               {"calendarId": "primary",
                                   resource: {
