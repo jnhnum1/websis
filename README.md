@@ -4,7 +4,7 @@ MIT Websis to Google Calendar Importer
 This is some Javascript for MIT students to parse their course schedules from
 WebSIS and add them to Google Calendar. 
 # Directions
- 1. Copy the text in the main.js file.
+ 1. Copy the text in the [main.js](main.js) file.
  2. Go to your websis class schedule
  3. Go to the javascript console in Chrome (right-click, inspect element, clickconsole)
  4. Paste this code and press enter.  If you see an error about gapi typeerror, try again.
