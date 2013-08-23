@@ -5,7 +5,7 @@ This is some Javascript for MIT students to parse their course schedules from
 WebSIS and add them to Google Calendar. 
 # Directions
  1. Copy the text in the [main.js](main.js) file.
- 2. Go to your websis class schedule
+ 2. Go to your [websis class schedule](https://student.mit.edu/cgi-bin/sfprwsch.sh)
  3. Go to the javascript console in Chrome (right-click, inspect element, clickconsole)
  4. Paste this code and press enter.  If you see an error about gapi typeerror, try again.
  5. Grant access.
