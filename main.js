@@ -58,9 +58,9 @@
                   var roomText = $($("td", this).get(4)).text().trim();
                   var type = null;
                   if (typeText) {
-                      if (typeText[0] == "B") {
+                      if (typeText.substring(0,3) == "Lab") {
                           type = " Lab";
-                      } else if (typeText[0] == "L") {
+                      } else if (typeText.substring(0,3) == "Lec") {
                           type = " Lecture";
                       } else if (typeText[0] == "R") {
                           type = " Recitation";
