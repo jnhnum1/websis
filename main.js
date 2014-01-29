@@ -25,7 +25,7 @@
     FR: "2014-02-07T",
     SA: "2014-02-08T",
     SU: "2014-02-09T",
-    LASTDAY: "20140515",
+    LASTDAY: "20140516",
   };
 
   var withGApi = function(data, textStatus, jqxhr) {
