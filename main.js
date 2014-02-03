@@ -18,14 +18,14 @@
   var apiKey = 'AIzaSyA3E0X5W_Q2spjPrehYTQI49w-xYGLjzDY';
 
   var dates = {
-    MO: "2013-09-09T",
-    TU: "2013-09-10T",
-    WE: "2013-09-04T",
-    TH: "2013-09-05T",
-    FR: "2013-09-06T",
-    SA: "2013-09-07T",
-    SU: "2013-09-08T",
-    LASTDAY: "20131212",
+    MO: "2014-02-10T",
+    TU: "2014-02-04T",
+    WE: "2014-02-05T",
+    TH: "2014-02-06T",
+    FR: "2014-02-07T",
+    SA: "2014-02-08T",
+    SU: "2014-02-09T",
+    LASTDAY: "20140516",
   };
 
   var withGApi = function(data, textStatus, jqxhr) {
@@ -126,11 +126,11 @@
   }
 
   var day2ToInt = function(day2) {
-      return {'WE' : 0, 'TH' : 1, 'FR' : 2, 'SA' : 3, 'SU' : 4, 'MO' : 5, 'TU' : 6}[day2]
+      return {'TU' :0, 'WE' : 1, 'TH' : 2, 'FR' : 3, 'SA' : 4, 'SU' : 5, 'MO' : 6}[day2]
   }
 
   var intToDay2 = function(dayint) {
-      return ['WE', 'TH', 'FR', 'SA', 'SU', 'MO', 'TU'][dayint];
+      return ['TU', 'WE', 'TH', 'FR', 'SA', 'SU', 'MO'][dayint];
   }
 
   var findFirstEvent = function(times) {
