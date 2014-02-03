@@ -126,11 +126,11 @@
   }
 
   var day2ToInt = function(day2) {
-      return {'WE' : 0, 'TH' : 1, 'FR' : 2, 'SA' : 3, 'SU' : 4, 'MO' : 5, 'TU' : 6}[day2]
+      return {'TU' :0, 'WE' : 1, 'TH' : 2, 'FR' : 3, 'SA' : 4, 'SU' : 5, 'MO' : 6}[day2]
   }
 
   var intToDay2 = function(dayint) {
-      return ['WE', 'TH', 'FR', 'SA', 'SU', 'MO', 'TU'][dayint];
+      return ['TU', 'WE', 'TH', 'FR', 'SA', 'SU', 'MO'][dayint];
   }
 
   var findFirstEvent = function(times) {
