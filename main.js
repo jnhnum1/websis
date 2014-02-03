@@ -33,7 +33,7 @@
       setTimeout(function() {
           gapi.client.setApiKey(apiKey);
           gapi.auth.init(checkAuth);
-      }, 100);
+      }, 500);
   }
 
   var checkAuth = function() {
@@ -60,7 +60,8 @@
                   if (typeText) {
                       if (typeText.substring(0,3) == "Lab") {
                           type = " Lab";
-                      } else if (typeText.substring(0,3) == "Lec") {
+                      } else if (typeText.substring(0,1) == "L") {
+                        // could be "Lec" or "L01" or something
                           type = " Lecture";
                       } else if (typeText[0] == "R") {
                           type = " Recitation";
