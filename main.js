@@ -18,14 +18,14 @@
   var apiKey = 'AIzaSyA3E0X5W_Q2spjPrehYTQI49w-xYGLjzDY';
 
   var dates = {
-    MO: "2014-02-10T",
-    TU: "2014-02-04T",
-    WE: "2014-02-05T",
-    TH: "2014-02-06T",
-    FR: "2014-02-07T",
-    SA: "2014-02-08T",
-    SU: "2014-02-09T",
-    LASTDAY: "20140516",
+    MO: "2015-02-02T",
+    TU: "2015-02-03T",
+    WE: "2015-02-04T",
+    TH: "2015-02-05T",
+    FR: "2015-02-06T",
+    SA: "2015-02-07T",
+    SU: "2015-02-08T",
+    LASTDAY: "20150514",
   };
 
   var withGApi = function(data, textStatus, jqxhr) {
